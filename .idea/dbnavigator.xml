@@ -23,7 +23,11 @@
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
-    <loaded-nodes />
+    <loaded-nodes>
+      <connection connection-id="2e77f8cd-04e3-4ca3-b7ca-89ce2ad8c18e">
+        <schema name="traitor_db" object-types="function, table, view" />
+      </connection>
+    </loaded-nodes>
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="2e77f8cd-04e3-4ca3-b7ca-89ce2ad8c18e">
