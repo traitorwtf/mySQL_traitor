@@ -25,7 +25,7 @@
     <show-object-properties value="true" />
     <loaded-nodes>
       <connection connection-id="2e77f8cd-04e3-4ca3-b7ca-89ce2ad8c18e">
-        <schema name="traitor_db" object-types="function, table, view" />
+        <schema name="traitor_db" object-types="column, constraint, function, index, procedure, table, dataset trigger, view" />
       </connection>
     </loaded-nodes>
   </component>
