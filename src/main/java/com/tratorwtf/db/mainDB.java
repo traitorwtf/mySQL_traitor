@@ -29,7 +29,6 @@ public class mainDB {
 
             //statement.execute("insert into users(name, surname, age, city) values('Alex', 'Maksimova', 16, 'Glazov')");
             //statement.executeUpdate("update users set name = 'Alexandra' where name = 'Alex'");
-            //statement.executeQuery();
         } catch (SQLException e) {
             System.err.println("Не удалось загрузить класс драйвера");
         }
