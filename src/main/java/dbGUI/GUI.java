@@ -172,7 +172,7 @@ public class GUI extends JFrame {
                 try {
                     dao.addUsers(infoName,infoSurname,intInfoAge, infoCity);
                     frame2.dispose();
-                    dao.getAllUsers();
+                    table.setModel(new MyTableModel(dao.getAllUsers()));
                 } catch (Exception e1) {
                     e1.printStackTrace();
                 }
