@@ -55,7 +55,7 @@ public class GUI extends JFrame {
             JOptionPane.showMessageDialog(this, "Error: " + exc, "Error", JOptionPane.ERROR_MESSAGE);
         }
 
-        setTitle("Employee Search App");
+        setTitle("Users Search App");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setBounds(100, 100, 450, 300);
         contentPane = new JPanel();
@@ -68,7 +68,7 @@ public class GUI extends JFrame {
         flowLayout.setAlignment(FlowLayout.LEFT);
         contentPane.add(panel, BorderLayout.NORTH);
 
-        JLabel lblEnterLastName = new JLabel("Enter last name");
+        JLabel lblEnterLastName = new JLabel("Enter surname");
         panel.add(lblEnterLastName);
 
         lastNameTextField = new JTextField();
