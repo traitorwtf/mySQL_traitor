@@ -8,7 +8,7 @@
     <artifactId>mySQL_traitor</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <dependencies><!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+    <dependencies>
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
@@ -20,6 +20,4 @@
             <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
-
-
 </project>

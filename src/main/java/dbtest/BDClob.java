@@ -26,6 +26,7 @@ class DBClob {
     private void go() {
         try {
             connection = DriverManager.getConnection(URL, username, password);
+
             /*//Trying to Save file to SQL
             statement = connection.prepareStatement(myStatement);
             File file = new File("C:\\!art\\The Best Animation v.2.txt");

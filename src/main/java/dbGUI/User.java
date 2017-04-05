@@ -1,4 +1,4 @@
-package com.tratorwtf.db;
+package dbGUI;
 
 /**
  * Created by traitorwtf on 03.04.2017.

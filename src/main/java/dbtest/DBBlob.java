@@ -44,11 +44,16 @@ public class DBBlob {
 
             if (resultSet.next()){
                 InputStream inputStream = resultSet.getBinaryStream("Picture");
+                BufferedInputStream bufferedInputStream = new BufferedInputStream(inputStream);
 
-                byte[] bytes = new byte[1024];
+                while (bufferedInputStream.available()>0){
+                    fileOutputStream.write(bufferedInputStream.read());
+                }
+
+                /*byte[] bytes = new byte[1024];
                 while (inputStream.read(bytes)>0){
                     fileOutputStream.write(bytes);
-                }
+                }*/
             }
 
             connection.close();
