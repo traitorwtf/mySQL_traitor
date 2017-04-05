@@ -94,4 +94,18 @@ public class DAO {
         resultSet.close();
         return users;
     }
+
+    void addUsers(String name, String surname, int age, String city) throws Exception{
+        String query = "INSERT INTO users ( name, surname, age, city) VALUES (?, ?, ?, ?)";
+        PreparedStatement preparedStatement = null;
+
+        preparedStatement = connection.prepareStatement(query);
+        preparedStatement.setString(1, name);
+        preparedStatement.setString(2, surname);
+        preparedStatement.setInt(3, age);
+        preparedStatement.setString(4, city);
+
+        preparedStatement.execute();
+        preparedStatement.close();
+    }
 }
