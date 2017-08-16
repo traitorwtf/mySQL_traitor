@@ -12,22 +12,24 @@ import java.util.List;
  * Created by traitorwtf on 10.05.2017.
  */
 public class HibTest {
-    static File file;
-    static SessionFactory factory;
-    static Session session;
+    File file;
+    SessionFactory factory;
+    Session session;
 
     public static void main(String[] args) {
-        file = new File("hibernate.cfg.xml");
-        factory = new Configuration().configure(file).addAnnotatedClass(User.class).buildSessionFactory();
-
-        session = factory.getCurrentSession();
-
         HibTest hibTest = new HibTest();
+        hibTest.file = new File("hibernate.cfg.xml");
+        hibTest.factory = new Configuration().configure(hibTest.file).addAnnotatedClass(User.class).buildSessionFactory();
+
+        hibTest.session = hibTest.factory.getCurrentSession();
+
+
 //        hibTest.createNewUser();
 //        hibTest.retreiveById(18);
 //         //использовать from + не название таблицы, а класс в Java!!
-//        hibTest.retreiveByQuery("from User where city='Moscow'");
-//        hibTest.updateById(1);
+        hibTest.retreiveByQuery("from User where city='Moscow'");
+//        hibTest.retreiveByQuery("from User");
+//        hibTest.updateById(2);
 //        hibTest.deleteById(19);
     }
 
